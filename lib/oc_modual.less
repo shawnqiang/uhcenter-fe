@@ -3,7 +3,7 @@
 #header {
 	height: 52px;
 	background-color:@headerBg;
-	margin-bottom:15px;
+	margin-bottom:@baseline;
 	position:relative;
 	z-index:200;
 	.box-shadow();
@@ -251,8 +251,8 @@
 	
 	position:relative;
 	z-index:100;
-	margin-bottom: 15px;
-	
+	margin-bottom: @baseline;
+	margin-top:-18px;
 	.wraper{
 		.fixed-container();
 		position:relative;
@@ -265,7 +265,7 @@
 			padding: 0px 5px;
 			list-style: none;
 			margin: 0;
-
+			.clearfix();
 			> li{
 				position: relative;
 				float: left;
@@ -841,12 +841,9 @@
 }
 .promotion{
 	margin-bottom: @baseline;
+	.clearfix();
 }
 
-.index-promotion{
-	margin-top:-72px;
-	
-}
 
 /* product info */
 .product-info{

@@ -192,6 +192,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   zoom: 1;
+  zoom: 1;
+}
+.container:before, .container:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.container:after {
+  clear: both;
 }
 .container:before, .container:after {
   display: table;
@@ -2436,7 +2445,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 #header {
   height: 52px;
   background-color: #f7f7f7;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   position: relative;
   z-index: 200;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
@@ -2678,7 +2687,8 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 #menu {
   position: relative;
   z-index: 100;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  margin-top: -18px;
 }
 #menu .wraper {
   width: 1000px;
@@ -2705,6 +2715,15 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   padding: 0px 5px;
   list-style: none;
   margin: 0;
+  zoom: 1;
+}
+#menu .wraper ul:before, #menu .wraper ul:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+#menu .wraper ul:after {
+  clear: both;
 }
 #menu .wraper ul > li {
   position: relative;
@@ -3203,9 +3222,15 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 .promotion {
   margin-bottom: 18px;
+  zoom: 1;
 }
-.index-promotion {
-  margin-top: -72px;
+.promotion:before, .promotion:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.promotion:after {
+  clear: both;
 }
 /* product info */
 .product-info .image-additional li {
