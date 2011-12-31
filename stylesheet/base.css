@@ -187,27 +187,33 @@ body {
   line-height: 18px;
   color: #404040;
 }
-.container {
+.container, #main {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   zoom: 1;
   zoom: 1;
 }
-.container:before, .container:after {
+.container:before,
+#main:before,
+.container:after,
+#main:after {
   display: table;
   content: "";
   zoom: 1;
 }
-.container:after {
+.container:after, #main:after {
   clear: both;
 }
-.container:before, .container:after {
+.container:before,
+#main:before,
+.container:after,
+#main:after {
   display: table;
   content: "";
   zoom: 1;
 }
-.container:after {
+.container:after, #main:after {
   clear: both;
 }
 .container-fluid {
@@ -392,6 +398,17 @@ a:hover {
 }
 .row > .offset-two-thirds {
   margin-left: 680px;
+}
+#main-left {
+  float: left;
+  margin-right: 20px;
+}
+#main-content {
+  float: left;
+}
+#main-right {
+  float: right;
+  margin-left: 20px;
 }
 /* Typography.less
  * Headings, body text, lists, code, and more for a versatile and durable typography system

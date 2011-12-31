@@ -15,7 +15,7 @@ body {
 }
 
 // Container (centered, fixed-width layouts)
-.container {
+.container, #main {
   .fixed-container();
   .clearfix();
 }
@@ -137,4 +137,18 @@ a {
 .row {
   > .offset-one-third   { margin-left: 360px; }
   > .offset-two-thirds  { margin-left: 680px; }
+}
+
+#main-left{
+  float: left;
+  margin-right: 20px;
+}
+
+#main-content{
+  float: left;
+}
+
+#main-right{
+  float: right;
+  margin-left: 20px;
 }
