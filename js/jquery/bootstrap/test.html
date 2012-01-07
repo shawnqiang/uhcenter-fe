@@ -1,15 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
 <head>
 <title>Your Store</title>
 <script type="text/javascript" src="../jquery-1.6.1.min.js""></script>
+<script type="text/javascript" src="../ui/jquery-ui-1.8.16.custom.min.js""></script>
 <script type="text/javascript" src="carousel.js"></script>
+<style>
+img {
+	border: 0;
+}
+.carousel-backward.disabled {
+	display: none;
+}
+.carousel-forward.disabled {
+	display: none;
+}
+</style>
 <body>
 
 <div style="position: relative; display: block; width: 900px; padding: 0 40px;">
-	<div data-carousel="horizontal" style="position: relative; overflow: hidden; width: 100%;">
-		<ul class="carousel" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 1180px;">
+	<div data-carousel="horizontal" data-step="1" data-wrap="true" style="position: relative; overflow: hidden; width: 100%;">
+		<ul class="carousel" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 1080px;">
 		        <li class="carousel-item" style="float: left; list-style: none outside none; width: 180px; text-align: center;" ><a href="/index.php?route=product/manufacturer/product&amp;manufacturer_id=5"><img title="HTC" alt="HTC" src="http://localhost/store/image/cache/data/htc_logo-80x80.jpg"></a></li>
 		        <li class="carousel-item" style="float: left; list-style: none outside none; width: 180px; text-align: center;" ><a href="/index.php?route=product/manufacturer/product&amp;manufacturer_id=9"><img title="Canon" alt="Canon" src="http://localhost/store/image/cache/data/canon_logo-80x80.jpg"></a></li>
 		        <li class="carousel-item" style="float: left; list-style: none outside none; width: 180px; text-align: center;" ><a href="/index.php?route=product/manufacturer/product&amp;manufacturer_id=8"><img title="Apple" alt="Apple" src="http://localhost/store/image/cache/data/apple_logo-80x80.jpg"></a></li>
@@ -18,8 +29,8 @@
 		        <li class="carousel-item" style="float: left; list-style: none outside none; width: 180px; text-align: center;" ><a href="/index.php?route=product/manufacturer/product&amp;manufacturer_id=7"><img title="Hewlett-Packard" alt="Hewlett-Packard" src="http://localhost/store/image/cache/data/hp_logo-80x80.jpg"></a></li>
 	      </ul>
 	</div>
-	<div class="carousel-backward" style="display: block; position: absolute; left: 0; top: 23px; font-size: 30px; font-weight: bold; cursor: pointer;" disabled="disabled">&lt;</div>
-	<div class="carousel-forward" style="display: block; position: absolute; right: 0; top: 23px; font-size: 30px; font-weight: bold; cursor: pointer;">&gt;</div>
+	<div class="carousel-backward" style="position: absolute; left: 0; top: 23px; font-size: 30px; font-weight: bold; cursor: pointer;">&lt;</div>
+	<div class="carousel-forward" style="position: absolute; right: 0; top: 23px; font-size: 30px; font-weight: bold; cursor: pointer;">&gt;</div>
 </div>
 
 <script>
