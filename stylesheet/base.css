@@ -2865,6 +2865,17 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .mod {
   margin-bottom: 18px;
 }
+.mod .mod-hd {
+  background-color: #f7f7f7;
+  padding: 8px 19px;
+}
+.mod .mod-bd {
+  padding: 18px 19px;
+}
+.mod .mod-bd form .actions {
+  margin: 0 -19px;
+  padding-left: 169px;
+}
 /* box */
 .box {
   margin-bottom: 18px;
@@ -3363,8 +3374,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-.signin .mod-hd {
-  padding: 8px 9px;
+.signin .mod-bd {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .signin form {
   margin-bottom: 0;
