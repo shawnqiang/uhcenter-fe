@@ -410,6 +410,9 @@ a:hover {
   float: right;
   margin-left: 20px;
 }
+#main-top, #main-bottom {
+  float: left;
+}
 /* Typography.less
  * Headings, body text, lists, code, and more for a versatile and durable typography system
  * ---------------------------------------------------------------------------------------- */
@@ -1816,11 +1819,20 @@ footer {
 }
 .page-header {
   margin-bottom: 17px;
-  border-top: 2px solid #333;
+  border-top: 2px solid #646464;
   background-color: #f7f7f7;
+  zoom: 1;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.page-header:before, .page-header:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.page-header:after {
+  clear: both;
 }
 .page-header .heading {
   margin-bottom: 8px;
@@ -1940,18 +1952,18 @@ footer {
 }
 .btn.primary {
   color: #ffffff;
-  background-color: #0064cd;
+  background-color: #a9004c;
   background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
-  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
-  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
-  background-image: linear-gradient(top, #049cdb, #0064cd);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#049cdb', endColorstr='#0064cd', GradientType=0);
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f5006e), to(#a9004c));
+  background-image: -moz-linear-gradient(top, #f5006e, #a9004c);
+  background-image: -ms-linear-gradient(top, #f5006e, #a9004c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5006e), color-stop(100%, #a9004c));
+  background-image: -webkit-linear-gradient(top, #f5006e, #a9004c);
+  background-image: -o-linear-gradient(top, #f5006e, #a9004c);
+  background-image: linear-gradient(top, #f5006e, #a9004c);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5006e', endColorstr='#a9004c', GradientType=0);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border-color: #0064cd #0064cd #003f81;
+  border-color: #a9004c #a9004c #5d002a;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn.active, .btn:active {
@@ -2462,12 +2474,22 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 #header {
   height: 52px;
   background-color: #f7f7f7;
+  background-color: #f7f7f7;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fefefe), to(#f7f7f7));
+  background-image: -moz-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: -ms-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #f7f7f7));
+  background-image: -webkit-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: -o-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: linear-gradient(top, #fefefe, #f7f7f7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f7f7f7', GradientType=0);
   margin-bottom: 18px;
   position: relative;
   z-index: 200;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 #header .wraper {
   width: 1000px;
@@ -2651,9 +2673,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 #header #search input {
   background: #FFF;
-  padding: 1px 1px 1px 33px;
-  height: 30px;
-  line-height: 30px;
+  padding: 2px 1px 2px 33px;
+  height: 24px;
+  line-height: 24px;
   width: 160px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2724,8 +2746,17 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 #menu .wraper ul {
   background: #f7f7f7;
+  background-color: #f7f7f7;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fefefe), to(#f7f7f7));
+  background-image: -moz-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: -ms-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #f7f7f7));
+  background-image: -webkit-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: -o-linear-gradient(top, #fefefe, #f7f7f7);
+  background-image: linear-gradient(top, #fefefe, #f7f7f7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f7f7f7', GradientType=0);
   height: 40px;
-  border: 1px solid #ddd;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
@@ -2830,6 +2861,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   margin-top: 5px;
   text-align: right;
   clear: both;
+}
+.mod {
+  margin-bottom: 18px;
 }
 /* box */
 .box {
@@ -3305,4 +3339,36 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background-color: #ffffff;
   border: none;
   margin: 12px 0 6px 20px;
+}
+.set-image {
+  position: relative;
+}
+.set-image .image {
+  float: left;
+}
+.set-image .image-additional {
+  float: right;
+  width: 100px;
+}
+.set-image .image-additional .media-item {
+  margin-bottom: 0;
+}
+.set-image .image-additional .media-item img {
+  width: 96px;
+  height: 96px;
+}
+.signin {
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.signin .mod-hd {
+  padding: 8px 9px;
+}
+.signin form {
+  margin-bottom: 0;
+}
+.signin form .actions {
+  margin-bottom: 0;
 }
