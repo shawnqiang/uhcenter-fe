@@ -2872,6 +2872,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .mod .mod-bd {
   padding: 18px 19px;
 }
+.mod .mod-bd form {
+  margin-bottom: 0;
+}
 .mod .mod-bd form .actions {
   margin: 0 -19px;
   padding-left: 169px;
@@ -3368,19 +3371,32 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   width: 96px;
   height: 96px;
 }
-.signin {
+.accountFrm {
   border: 1px solid #dddddd;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.signin .mod-bd {
+.accountFrm .mod-bd {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.signin form {
-  margin-bottom: 0;
+.account .mod-hd {
+  border: 1px solid #ddd;
+  border-top: 2px solid #666666;
+  border-bottom: none;
 }
-.signin form .actions {
-  margin-bottom: 0;
+.account .mod-hd h2,
+.account .mod-hd h3,
+.account .mod-hd h4,
+.account .mod-hd h5 {
+  font-size: 13px;
+  line-height: 18px;
+}
+.account .mod-bd {
+  border: 1px solid #dddddd;
+  border-top: none;
 }

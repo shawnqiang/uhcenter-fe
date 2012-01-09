@@ -372,11 +372,13 @@
 	.mod-bd{
 		padding:18px 19px;
 		form{
+			margin-bottom:0;
 			.actions{
 				margin:0 -19px;
 				padding-left:169px;
 			}
 		}
+		
 	}
 
 	.mod-ft{
@@ -948,18 +950,31 @@
 }
 
 // Sign in
-.signin{
+.accountFrm{
 	border:1px solid #dddddd;
 	.border-radius(5px);
+	.box-shadow(0 2px 10px rgba(0,0,0,.1));
 	
 	.mod-bd{
 		margin-bottom:0;
 		padding-bottom:0;
 	}
-	form{
-		margin-bottom:0;
-		.actions{
-			margin-bottom:0;
+	
+}
+
+.account{
+
+	.mod-hd{
+		border:1px solid #ddd;
+		border-top:2px solid #666666;
+		border-bottom:none;
+		h2,h3,h4,h5{
+			font-size:@basefontSize;
+			line-height:@baseline;
 		}
+	}
+	.mod-bd{
+		border:1px solid #dddddd;
+		border-top:none;
 	}
 }
