@@ -59,15 +59,12 @@
 		min-width: 300px;
 		.heading{
 			float: right;
-			margin-right: 180px;
+			margin-right: 215px;
 			margin-top: 12px;
 			padding-left: 19px;
 			padding-right: 19px;
-			border-top: 1px solid @headerBg;
-			border-left: 1px solid @headerBg;
 			border-right: 1px solid #EEEEEE;
 			position: relative;
-			background-color:@headerBg;
 			height:28px;
 			line-height:28px;
 			z-index: 1;	
@@ -97,7 +94,7 @@
 			padding: 8px;
 			min-height: 150px;
 			background:@white;
-			border:1px solid #eeeeee;
+			border-right:1px solid #eeeeee;
 			-webkit-border-radius: 0px 7px 7px 7px;
 			-moz-border-radius: 0px 7px 7px 7px;
 			-khtml-border-radius: 0px 7px 7px 7px;
@@ -165,8 +162,8 @@
 		
 		&.active{
 			.heading{
-				margin-top: 5px;
-				padding-top: 10px;
+				margin-top: 6px;
+				padding-top: 6px;
 				padding-bottom: 6px;
 				border-top: 1px solid #EEEEEE;
 				border-left: 1px solid #EEEEEE;
@@ -191,8 +188,8 @@
 		position: absolute;
 		top: 12px;
 		right: 0px;
-		.columns(3);
 		z-index: 15;
+		width:195px;
 
 		input{
 			background: #FFF;
@@ -201,7 +198,6 @@
 			line-height:24px;
 			.columns(3);
 			.border-radius(3px);			
-			.box-shadow();
 		}
 	}
 
@@ -262,8 +258,7 @@
 			background: #f7f7f7;
 			#gradient > .vertical(#fefefe,#f7f7f7);
 			height: 40px;
-			
-			.box-shadow();
+			border-bottom:3px solid @red;
 			padding: 0px 5px;
 			list-style: none;
 			margin: 0;
@@ -287,7 +282,9 @@
 						color:@baseColor;
 					}
 					&.active{
-						color:@baseColor;
+						color:@white;
+						font-weight:bold;
+						background-color:@baseColor;
 					}
 
 				}

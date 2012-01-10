@@ -2552,15 +2552,12 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 #header #cart .heading {
   float: right;
-  margin-right: 180px;
+  margin-right: 215px;
   margin-top: 12px;
   padding-left: 19px;
   padding-right: 19px;
-  border-top: 1px solid #f7f7f7;
-  border-left: 1px solid #f7f7f7;
   border-right: 1px solid #EEEEEE;
   position: relative;
-  background-color: #f7f7f7;
   height: 28px;
   line-height: 28px;
   z-index: 1;
@@ -2588,7 +2585,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   padding: 8px;
   min-height: 150px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   -webkit-border-radius: 0px 7px 7px 7px;
   -moz-border-radius: 0px 7px 7px 7px;
   -khtml-border-radius: 0px 7px 7px 7px;
@@ -2649,8 +2646,8 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   text-align: center;
 }
 #header #cart.active .heading {
-  margin-top: 5px;
-  padding-top: 10px;
+  margin-top: 6px;
+  padding-top: 6px;
   padding-bottom: 6px;
   border-top: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
@@ -2668,8 +2665,8 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   position: absolute;
   top: 12px;
   right: 0px;
-  width: 160px;
   z-index: 15;
+  width: 195px;
 }
 #header #search input {
   background: #FFF;
@@ -2680,9 +2677,6 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 #header .button-search {
   position: absolute;
@@ -2757,9 +2751,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   background-image: linear-gradient(top, #fefefe, #f7f7f7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f7f7f7', GradientType=0);
   height: 40px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  border-bottom: 3px solid #a9004c;
   padding: 0px 5px;
   list-style: none;
   margin: 0;
@@ -2793,7 +2785,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   color: #a9004c;
 }
 #menu .wraper ul > li > a.active {
-  color: #a9004c;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #a9004c;
 }
 /* footer */#footer {
   width: 1000px;
