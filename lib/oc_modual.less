@@ -791,6 +791,14 @@
 		ul{
 			margin-bottom: 0;
 		}
+
+		.price-old{
+			margin-right:10px;
+		}
+		.price-new{
+			color:@baseColor;
+			font-weight:bold;
+		}
 	}
 
 	.span7 &{
@@ -828,6 +836,15 @@
 					bottom:1px;
 					width:100%;
 				}
+
+				.price{
+					.price-old{
+						float:left;
+					}
+					.price-new{
+						float:right;
+					}
+				}
 			}
 		}
 
@@ -842,6 +859,7 @@
 				padding:8px 9px;
 				position:relative;
 				.box-shadow()
+				
 				.image{
 					img{
 						width:350px;
@@ -1020,5 +1038,28 @@
 	.mod-bd{
 		border:1px solid #dddddd;
 		border-top:none;
+	}
+}
+
+//Set mod
+.set{
+	.name{
+		
+		
+		a{
+			
+			font-size:14px;
+		}
+	}
+
+	.price{
+		.clearfix();
+		.price-old{
+			float:left;
+		}
+		.price-new{
+			float:right;
+			color:@baseColor;
+		}
 	}
 }

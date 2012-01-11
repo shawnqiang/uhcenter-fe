@@ -3229,6 +3229,13 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .media-grid .media-item ul {
   margin-bottom: 0;
 }
+.media-grid .media-item .price-old {
+  margin-right: 10px;
+}
+.media-grid .media-item .price-new {
+  color: #a9004c;
+  font-weight: bold;
+}
 .span7 .media-grid .media-item {
   width: 190px;
 }
@@ -3255,6 +3262,12 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   left: 0;
   bottom: 1px;
   width: 100%;
+}
+.span13 .media-grid.three-cols .media-item .set .price .price-old {
+  float: left;
+}
+.span13 .media-grid.three-cols .media-item .set .price .price-new {
+  float: right;
 }
 .span13 .media-grid.two-cols .media-item {
   width: 370px;
@@ -3428,4 +3441,25 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .account .mod-bd {
   border: 1px solid #dddddd;
   border-top: none;
+}
+.set .name a {
+  font-size: 14px;
+}
+.set .price {
+  zoom: 1;
+}
+.set .price:before, .set .price:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.set .price:after {
+  clear: both;
+}
+.set .price .price-old {
+  float: left;
+}
+.set .price .price-new {
+  float: right;
+  color: #a9004c;
 }
