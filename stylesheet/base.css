@@ -1835,8 +1835,9 @@ footer {
   clear: both;
 }
 .page-header .heading {
-  margin-bottom: 8px;
+  margin-bottom: 0;
   padding: 0 10px;
+  font-size: 20px;
 }
 .side-bar .page-header {
   border-color: #666;
@@ -2752,7 +2753,6 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f7f7f7', GradientType=0);
   height: 40px;
   border-bottom: 3px solid #a9004c;
-  padding: 0px 5px;
   list-style: none;
   margin: 0;
   zoom: 1;
@@ -3208,11 +3208,6 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   overflow: hidden;
   position: relative;
 }
-.media-grid .media-item .name {
-  position: absolute;
-  background-color: #f7f7f7;
-  width: 100%;
-}
 .media-grid .media-item .name .semiBg {
   filter: alpha(opacity=40);
   -khtml-opacity: 0.4;
@@ -3227,6 +3222,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .media-grid .media-item .image {
   margin-bottom: 9px;
 }
+.media-grid .media-item .image a {
+  display: block;
+  overflow: hidden;
+}
 .media-grid .media-item ul {
   margin-bottom: 0;
 }
@@ -3239,8 +3238,44 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .span13 .media-grid.three-cols .media-item {
   width: 240px;
 }
+.span13 .media-grid.three-cols .media-item .set {
+  border: 1px solid #dddddd;
+  padding: 8px 9px;
+  position: relative;
+}
+.span13 .media-grid.three-cols .media-item .set .image img {
+  width: 220px;
+}
+.span13 .media-grid.three-cols .media-item .set .stacked {
+  position: absolute;
+  height: 1px;
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+}
 .span13 .media-grid.two-cols .media-item {
   width: 370px;
+}
+.span13 .media-grid.two-cols .media-item .set {
+  border: 1px solid #dddddd;
+  padding: 8px 9px;
+  position: relative;
+}
+.span13 .media-grid.two-cols .media-item .set .image img {
+  width: 350px;
+}
+.span13 .media-grid.two-cols .media-item .set .stacked {
+  position: absolute;
+  height: 1px;
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
 }
 .span17 .media-grid .media-item {
   width: 184px;

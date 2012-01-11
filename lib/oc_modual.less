@@ -259,7 +259,6 @@
 			#gradient > .vertical(#fefefe,#f7f7f7);
 			height: 40px;
 			border-bottom:3px solid @red;
-			padding: 0px 5px;
 			list-style: none;
 			margin: 0;
 			.clearfix();
@@ -767,9 +766,7 @@
 		position:relative;
 
 		.name{
-			position: absolute;
-			background-color: #f7f7f7;
-			width: 100%;
+			
 			
 			.semiBg{
 				.opacity(40);
@@ -785,6 +782,10 @@
 
 		.image{
 			margin-bottom:9px;
+			a{
+				display:block;
+				overflow:hidden;
+			}
 		}
 
 		ul{
@@ -806,12 +807,58 @@
 	.span13 &.three-cols{
 		.media-item{
 			width:240px; //(760-40)/3
+			.set{
+				border:1px solid #dddddd;
+				padding:8px 9px;
+				position:relative;
+				.box-shadow()
+				.image{
+					img{
+						width:220px;
+					}
+				}
+
+				.stacked{
+					position:absolute;
+					height:1px;
+					border:1px solid #dddddd;
+					border-left:none;
+					border-right:none;
+					left:0;
+					bottom:1px;
+					width:100%;
+				}
+			}
 		}
+
+
 	}
 
 	.span13 &.two-cols{
 		.media-item{
 			width:370px; //(760-20)/2
+			.set{
+				border:1px solid #dddddd;
+				padding:8px 9px;
+				position:relative;
+				.box-shadow()
+				.image{
+					img{
+						width:350px;
+					}
+				}
+
+				.stacked{
+					position:absolute;
+					height:1px;
+					border:1px solid #dddddd;
+					border-left:none;
+					border-right:none;
+					left:0;
+					bottom:1px;
+					width:100%;
+				}
+			}
 		}
 	}
 
