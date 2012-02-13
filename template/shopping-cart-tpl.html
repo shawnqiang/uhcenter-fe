@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>United Home Center</title>
+	<link rel="stylesheet" href="../stylesheet/base.css">
+	<script type="text/javascript" src="../js/jquery/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" />
+	<script type="text/javascript" src="../js/jquery/ui/external/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/jquery/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/jquery/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<!--[if IE]>
+	<script type="text/javascript" src="../js/jquery/fancybox/jquery.fancybox-1.3.4-iefix.js"></script>
+	<![endif]--> 
+	<script type="text/javascript" src="../js/jquery/tabs.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="../stylesheet/ie7.css" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="../stylesheet/ie6.css" />
+	<script type="text/javascript" src="../js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">
+	DD_belatedPNG.fix('#logo img');
+	</script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- [page-header] -->
+		<div id="header">
+			<div class="wraper">
+			<div id="logo">
+				<a href="#"><img src="../assets/logo.png" alt="Placeholder image"></a>
+			</div>
+			<div id="cart">
+				<div class="heading">
+					<a href="#"><span id="cart_total">0 Item</span></a>
+				</div>
+				<div class="content">
+					<table class="cart">
+				    <tbody>
+				    <tr>
+				    <td class="image"><a href="http://uhcenter.com/index.php?route=product/product&amp;product_id=47"><img src="http://uhcenter.com/image/cache/data/hp_1-40x40.jpg" alt="HP LP3065" title="HP LP3065"></a>
+				    </td>
+				    <td class="name"><a href="http://uhcenter.com/index.php?route=product/product&amp;product_id=47">HP LP3065</a>
+				      <div> - <small>Delivery Date 2011-04-22</small><br>
+				              </div>
+				    </td>
+				    <td class="quantity">x&nbsp;1</td>
+				    <td class="total">$100.00</td>
+				    <td class="remove"><img src="catalog/view/theme/default/image/close.png" alt="Remove" title="Remove" onclick="removeCart('47:YToxOntpOjIyNTtzOjEwOiIyMDExLTA0LTIyIjt9');"></td>
+				  	</tr>
+				      
+					</tbody>
+					</table>
+					<table class="total">
+					    <tbody>
+					    <tr>
+					    	<td align="right"><b>Sub-Total</b></td>
+					    	<td align="right">$100.00</td>
+					  	</tr>
+					    <tr>
+					    	<td align="right"><b>Total</b></td>
+					    	<td align="right">$100.00</td>
+					  	</tr>
+					  	</tbody>
+					</table>
+					<div class="checkout"><a href="http://uhcenter.com/index.php?route=checkout/checkout" class="btn"><span>Checkout</span></a></div>
+				</div>
+			</div>
+			
+			<div id="search">
+		    	<div class="button-search"></div>
+		        <input type="text" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';">
+      		</div>
+      		</div>	
+		</div><!-- /header -->
+		<div id="menu">
+			<div class="wraper"> 
+				<ul>
+					<li><a href="#">CategoryName</a>
+					</li>
+					<li><a href="#">CategoryName</a>
+					</li>
+					<li><a href="#">CategoryName</a>
+					</li>
+					<li><a href="#">CategoryName</a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /menu -->
+	<!-- [/page-header] -->
+
+	<!-- [page-content] -->
+		<div id="main">
+			
+			<ul class="breadcrumb">
+		        	<li><a href="#">Home</a> <span class="divider">/</span></li>
+		        	<li><a href="#">Middle page</a> <span class="divider">/</span></li>
+		        	<li class="active">Another one</li>
+		    </ul><!-- /breadcrumb -->
+
+<style>
+#cart form{
+	border: 1px solid #f7f7f7;
+}
+#cart .page-header {
+	margin-bottom: 0;
+}
+#cart-items {
+	padding: 0 20px;
+	margin: 0;
+}
+#cart-items li {
+	list-style: none;
+	padding: 25px 0;
+}
+
+#cart-items .item-image {
+	float: left;
+	margin-right: 20px;
+}
+#cart-items .item-single-price,
+#cart-items .item-count,
+#cart-items .item-price {
+	float: right;
+	line-height: 36px;
+}
+
+#cart-items .item-count {
+	margin: 0 20px;
+}
+#cart-items .item-count input {
+	width: 30px;
+}
+
+#cart-items .item-attrs {
+	margin-left: 170px;
+	width: 300px;
+}
+#cart-items .item-attrs li {
+	float: left;
+	padding: 5px 30px;
+}
+#update-cart {
+	margin: 20px;
+}
+#update-cart a {
+	color: #a9004c;
+}
+#shipping-estimate {
+	position: relative;
+	padding: 20px;
+	background-color: #f7f7f7;
+}
+
+#cart-sum {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	width: 200px;
+}
+#cart-sum .cart-sum-value {
+	float: right;
+}
+
+
+#cart-sum-right {
+	background-color: #f7f7f7;
+	padding-bottom: 50px;
+}
+#cart-sum-right .page-header {
+	border-color: #A9004C;
+	margin-bottom: 0;
+}
+#cart-sum-right p {
+	margin: 5px 20px;
+	border-bottom: 1px solid #ddd;
+	line-height: 28px;
+}
+#cart-sum-right p.first {
+	border-top: 1px solid #ddd;
+}
+#cart-sum-right .cart-sum-right-value {
+	float: right;
+	text-align: left;
+	white-space: nowrap;
+}
+#cart-sum-right strong.cart-sum-right-subject {
+	font-weight: bold;
+}
+#cart-sum-right strong.cart-sum-right-value {
+	font-weight: bold;
+	color: #A9004C;
+}
+#cart2checkout {
+	display: block;
+	width: 120px;
+	text-align: center;
+	margin: 40px auto 0;
+}
+
+</style>
+
+			<div id="main-content">
+				<div id="cart" class="span12 main-content">
+					<div class="page-header">
+				    		<h1 class="heading">Item(s) in your cart</h1>
+					</div>
+					<form method="post" action="">
+						<ul id="cart-items">
+							<li>
+								<div class="item-image"><img src="http://placehold.it/128X128" /></div>
+								<p class="item-price">US$ 200</p>
+								<p class="item-count"><input type="text" maxlength="3" size="10" value="1" /></p>
+								<p class="item-single-price">US$ 200 &#215; </p>
+								<h4 class="item-name">product name</h4>
+								<ul class="item-attrs">
+									<li><span class="item-attr-name">width: </span><span class="item-attr-value">30</span></li>
+									<li><span class="item-attr-name">height: </span><span class="item-attr-value">30</span></li>
+									<li><span class="item-attr-name">color: </span><span class="item-attr-value">coffee</span></li>
+								</ul>
+							</li>
+							<br style="clear:both;" />
+							<li>
+								<div class="item-image"><img src="http://placehold.it/128X128" /></div>
+								<p class="item-price">US$ 200</p>
+								<p class="item-count"><input type="text" maxlength="3" value="1" /></p>
+								<p class="item-single-price">US$ 200 &#215; </p>
+								<h4 class="item-name">product name</h4>
+								<ul class="item-attrs">
+									<li><span class="item-attr-name">width: </span><span class="item-attr-value">30</span></li>
+									<li><span class="item-attr-name">height: </span><span class="item-attr-value">30</span></li>
+									<li><span class="item-attr-name">color: </span><span class="item-attr-value">coffee</span></li>
+								</ul>
+							</li>
+							<br style="clear:both;" />
+						</ul>
+						<div id="update-cart">Did you make any changes above? <a href="#">update cart</a></div>
+						<div id="shipping-estimate">
+							<p>Enter your destination to get a shipping estimate.</p>
+							<p><span>region/state</span><select name="state"><option>Los Angeles</option></select></p>
+							<p><span>postcode</span><input type="text" name="postcode" maxlength="6" size="10" /></p>
+							<p><a id="get-quotes" href="#">get quotes</a></p>
+							<p><a id="apply-shipping" href="#">apply shipping</a></p>
+						<div id="cart-sum">
+							<p><span class="cart-sum-subject">free shipping</span><span class="cart-sum-value">0</span></p>
+							<p><span class="cart-sum-subject">total</span><span class="cart-sum-value">US$ 400</span></p>
+						</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="main-right">
+				<div id="cart-sum-right" class="span5">
+					<div class="page-header">
+				    		<h1 class="heading">Cart summary</small></h1>
+					</div>
+					<p class="first"><span class="cart-sum-right-subject">Subtotal</span><span class="cart-sum-right-value">US$ 400</span></p>
+					<p><span class="cart-sum-right-subject">Shipping</span><span class="cart-sum-right-value">US$ 50</span></p>
+					<p><strong class="cart-sum-right-subject">Total</strong><strong class="cart-sum-right-value">US$ 450</strong></p>
+					<a href="#" id="cart2checkout" class="btn primary">Checkout</a>
+				</div>
+			</div>
+		</div>
+	<!-- [/page-content] -->
+
+	<!-- [page-footer] -->
+		<div id="footer">
+			<div class="wraper">
+				<div class="column">
+				    <h3>Information</h3>
+				    <ul>
+				            <li><a href="http://blog.lezipu.com/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+				            <li><a href="http://blog.lezipu.com/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+				            <li><a href="http://blog.lezipu.com/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+				            <li><a href="http://blog.lezipu.com/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+				          </ul>
+				</div>
+				<div class="column">
+				    <h3>Customer Service</h3>
+				    <ul>
+				      <li><a href="http://blog.lezipu.com/index.php?route=information/contact">Contact Us</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=account/return/insert">Returns</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=information/sitemap">Site Map</a></li>
+				    </ul>
+				</div>
+				<div class="column">
+				    <h3>Extras</h3>
+				    <ul>
+				      <li><a href="http://blog.lezipu.com/index.php?route=product/manufacturer">Brands</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=checkout/voucher">Gift Vouchers</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=affiliate/account">Affiliates</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=product/special">Specials</a></li>
+				    </ul>
+				</div>
+				<div class="column">
+				    <h3>My Account</h3>
+				    <ul>
+				      <li><a href="http://blog.lezipu.com/index.php?route=account/account">My Account</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=account/order">Order History</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=account/wishlist">Wish List</a></li>
+				      <li><a href="http://blog.lezipu.com/index.php?route=account/newsletter">Newsletter</a></li>
+				    </ul>
+				</div>
+			  	<div class="footer-info">
+            		<address>Registered in England 07101408, 45 Notting Hill Gate, Newcombe House, London, W11 3LQ, please note this is not a showroom</address>
+            		<p>&copy; 2011 unitedhoming.com</p>
+           		
+       			</div>
+       		</div>
+		</div><!-- /footer -->
+	<!-- [/page-footer] -->
+</body>
+</html>
