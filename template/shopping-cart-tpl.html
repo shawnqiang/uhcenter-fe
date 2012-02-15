@@ -103,110 +103,8 @@
 		        	<li class="active">Another one</li>
 		    </ul><!-- /breadcrumb -->
 
-<style>
-#cart form{
-	border: 1px solid #f7f7f7;
-}
-#cart .page-header {
-	margin-bottom: 0;
-}
-#cart-items {
-	padding: 0 20px;
-	margin: 0;
-}
-#cart-items li {
-	list-style: none;
-	padding: 25px 0;
-}
-
-#cart-items .item-image {
-	float: left;
-	margin-right: 20px;
-}
-#cart-items .item-single-price,
-#cart-items .item-count,
-#cart-items .item-price {
-	float: right;
-	line-height: 36px;
-}
-
-#cart-items .item-count {
-	margin: 0 20px;
-}
-#cart-items .item-count input {
-	width: 30px;
-}
-
-#cart-items .item-attrs {
-	margin-left: 170px;
-	width: 300px;
-}
-#cart-items .item-attrs li {
-	float: left;
-	padding: 5px 30px;
-}
-#update-cart {
-	margin: 20px;
-}
-#update-cart a {
-	color: #a9004c;
-}
-#shipping-estimate {
-	position: relative;
-	padding: 20px;
-	background-color: #f7f7f7;
-}
-
-#cart-sum {
-	position: absolute;
-	right: 20px;
-	bottom: 10px;
-	width: 200px;
-}
-#cart-sum .cart-sum-value {
-	float: right;
-}
-
-
-#cart-sum-right {
-	background-color: #f7f7f7;
-	padding-bottom: 50px;
-}
-#cart-sum-right .page-header {
-	border-color: #A9004C;
-	margin-bottom: 0;
-}
-#cart-sum-right p {
-	margin: 5px 20px;
-	border-bottom: 1px solid #ddd;
-	line-height: 28px;
-}
-#cart-sum-right p.first {
-	border-top: 1px solid #ddd;
-}
-#cart-sum-right .cart-sum-right-value {
-	float: right;
-	text-align: left;
-	white-space: nowrap;
-}
-#cart-sum-right strong.cart-sum-right-subject {
-	font-weight: bold;
-}
-#cart-sum-right strong.cart-sum-right-value {
-	font-weight: bold;
-	color: #A9004C;
-}
-#cart2checkout {
-	display: block;
-	width: 120px;
-	text-align: center;
-	margin: 40px auto 0;
-}
-
-</style>
-
 			<div id="main-content">
-				<div id="cart" class="span12 main-content">
+				<div id="cart" class="span13 main-content">
 					<div class="page-header">
 				    		<h1 class="heading">Item(s) in your cart</h1>
 					</div>
@@ -242,27 +140,33 @@
 						<div id="update-cart">Did you make any changes above? <a href="#">update cart</a></div>
 						<div id="shipping-estimate">
 							<p>Enter your destination to get a shipping estimate.</p>
-							<p><span>region/state</span><select name="state"><option>Los Angeles</option></select></p>
-							<p><span>postcode</span><input type="text" name="postcode" maxlength="6" size="10" /></p>
-							<p><a id="get-quotes" href="#">get quotes</a></p>
-							<p><a id="apply-shipping" href="#">apply shipping</a></p>
-						<div id="cart-sum">
-							<p><span class="cart-sum-subject">free shipping</span><span class="cart-sum-value">0</span></p>
-							<p><span class="cart-sum-subject">total</span><span class="cart-sum-value">US$ 400</span></p>
-						</div>
+							<div id="ship-est-addr">
+								<p><label for="ship-est-state">region/state</label><select id="ship-est-state" name="state"><option>Los Angeles</option></select></p>
+								<p><label for="ship-est-postcode">postcode</label><input type="text" id="ship-est-postcode" name="postcode" maxlength="6" /></p>
+								<p><a id="get-quotes" class="btn" href="#">get quotes</a></p>
+							</div>
+							<dl id="ship-quotes">
+								<dt>Flat Rate</dt>
+								<dd>
+									<input type="radio" id="ship-quote-flat-flat" name="flat" />
+									<label for="ship-quote-flat-flat">Flat Shipping Rate</label>
+									<label for="ship-quote-flat-flat" class="ship-quote-price">$5.00</label>
+								</dd>
+							</dl>
+							<p><a id="apply-shipping" class="btn" href="#">apply shipping</a></p>
 						</div>
 					</form>
 				</div>
 			</div>
 
 			<div id="main-right">
-				<div id="cart-sum-right" class="span5">
+				<div id="cart-sum" class="span4">
 					<div class="page-header">
 				    		<h1 class="heading">Cart summary</small></h1>
 					</div>
-					<p class="first"><span class="cart-sum-right-subject">Subtotal</span><span class="cart-sum-right-value">US$ 400</span></p>
-					<p><span class="cart-sum-right-subject">Shipping</span><span class="cart-sum-right-value">US$ 50</span></p>
-					<p><strong class="cart-sum-right-subject">Total</strong><strong class="cart-sum-right-value">US$ 450</strong></p>
+					<p class="first"><span class="cart-sum-subject">Subtotal</span><span class="cart-sum-value">US$ 400</span></p>
+					<p><span class="cart-sum-subject">Shipping</span><span class="cart-sum-value">US$ 50</span></p>
+					<p><strong class="cart-sum-subject">Total</strong><strong class="cart-sum-value">US$ 450</strong></p>
 					<a href="#" id="cart2checkout" class="btn primary">Checkout</a>
 				</div>
 			</div>

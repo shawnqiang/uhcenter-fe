@@ -1062,3 +1062,131 @@
 		}
 	}
 }
+
+#cart {
+	form {
+		border: 1px solid #f7f7f7;
+	}
+	.page-header {
+		margin-bottom: 0;
+	}
+}
+#cart-items {
+	padding: 0 20px;
+	margin: 0;
+	li {
+		list-style: none;
+		padding: 25px 0;
+	}
+	.item-image {
+		float: left;
+		margin-right: 20px;
+	}
+	.item-single-price,
+	.item-count,
+	.item-price {
+		float: right;
+		line-height: 36px;
+	}
+	.item-count {
+		margin: 0 20px 0 10px;
+		input {
+			width: 30px;
+		}
+	}
+	.item-attrs {
+		margin-left: 170px;
+		width: 300px;
+		li {
+			float: left;
+			padding: 5px 30px;
+		}
+	}
+}
+#update-cart {
+	margin: 20px;
+	a {
+		color: @red;
+	}
+}
+#shipping-estimate {
+	position: relative;
+	padding: 20px;
+	background-color: #f7f7f7;
+	label {
+		float: none;
+		width: 80px;
+		margin-right: 10px;
+	}
+}
+#ship-est-addr {
+	.clearfix();
+	p {
+		float: left;
+		margin-right: 20px;
+	}
+}
+#ship-est-state {
+	width: auto;
+}
+#ship-est-postcode {
+	width: 100px;
+}
+#ship-quotes {
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		text-align: right;
+		margin-top: 6px;
+		label, input {
+			width: auto;
+			padding-top: 0;
+			margin-right: 10px;
+			white-space: nowrap;
+			float: left;
+			cursor: pointer;
+		}
+		.ship-quote-price {
+			float: none;
+		}
+	}
+}
+
+#cart-sum{
+	background-color: #f7f7f7;
+	padding-bottom: 50px;
+	.page-header {
+		border-color: @red;
+		margin-bottom: 0;
+	}
+	p {
+		margin: 5px 20px;
+		border-bottom: 1px solid #ddd;
+		line-height: 28px;
+		&.first {
+			border-top: 1px solid #ddd;
+		}
+	}
+	.cart-sum-value {
+		float: right;
+		text-align: left;
+		white-space: nowrap;
+	}
+	strong.cart-sum-subject {
+		font-weight: bold;
+	}
+	strong.cart-sum-value {
+		font-weight: bold;
+		color: @red;
+	}
+}
+#cart2checkout {
+	display: block;
+	width: 120px;
+	text-align: center;
+	margin: 40px auto 0;
+}
+

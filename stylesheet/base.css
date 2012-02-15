@@ -3469,3 +3469,132 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   float: right;
   color: #a9004c;
 }
+#cart form {
+  border: 1px solid #f7f7f7;
+}
+#cart .page-header {
+  margin-bottom: 0;
+}
+#cart-items {
+  padding: 0 20px;
+  margin: 0;
+}
+#cart-items li {
+  list-style: none;
+  padding: 25px 0;
+}
+#cart-items .item-image {
+  float: left;
+  margin-right: 20px;
+}
+#cart-items .item-single-price, #cart-items .item-count, #cart-items .item-price {
+  float: right;
+  line-height: 36px;
+}
+#cart-items .item-count {
+  margin: 0 20px 0 10px;
+}
+#cart-items .item-count input {
+  width: 30px;
+}
+#cart-items .item-attrs {
+  margin-left: 170px;
+  width: 300px;
+}
+#cart-items .item-attrs li {
+  float: left;
+  padding: 5px 30px;
+}
+#update-cart {
+  margin: 20px;
+}
+#update-cart a {
+  color: #a9004c;
+}
+#shipping-estimate {
+  position: relative;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+#shipping-estimate label {
+  float: none;
+  width: 80px;
+  margin-right: 10px;
+}
+#ship-est-addr {
+  zoom: 1;
+}
+#ship-est-addr:before, #ship-est-addr:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+#ship-est-addr:after {
+  clear: both;
+}
+#ship-est-addr p {
+  float: left;
+  margin-right: 20px;
+}
+#ship-est-state {
+  width: auto;
+}
+#ship-est-postcode {
+  width: 100px;
+}
+#ship-quotes {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+#ship-quotes dt {
+  font-weight: bold;
+}
+#ship-quotes dd {
+  text-align: right;
+  margin-top: 6px;
+}
+#ship-quotes dd label, #ship-quotes dd input {
+  width: auto;
+  padding-top: 0;
+  margin-right: 10px;
+  white-space: nowrap;
+  float: left;
+  cursor: pointer;
+}
+#ship-quotes dd .ship-quote-price {
+  float: none;
+}
+#cart-sum {
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+#cart-sum .page-header {
+  border-color: #a9004c;
+  margin-bottom: 0;
+}
+#cart-sum p {
+  margin: 5px 20px;
+  border-bottom: 1px solid #ddd;
+  line-height: 28px;
+}
+#cart-sum p.first {
+  border-top: 1px solid #ddd;
+}
+#cart-sum .cart-sum-value {
+  float: right;
+  text-align: left;
+  white-space: nowrap;
+}
+#cart-sum strong.cart-sum-subject {
+  font-weight: bold;
+}
+#cart-sum strong.cart-sum-value {
+  font-weight: bold;
+  color: #a9004c;
+}
+#cart2checkout {
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 40px auto 0;
+}
