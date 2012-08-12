@@ -1,7 +1,7 @@
 auto: true
 server: true
 permalink: none
-baseurl: uhcenter-fe 
+baseurl: /uhcenter-fe 
 exclude:
 - .gitignore
 - README.md
